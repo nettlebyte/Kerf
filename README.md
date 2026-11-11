@@ -82,13 +82,6 @@ The binary will be at `target\release\kerf.exe`. The Cargo package is named `ker
 - Windows with capture protection (DRM video, windows using `SetWindowDisplayAffinity`) appear black. This is an OS restriction.
 - To use hotkeys while an elevated (admin) window is focused, run Kerf as administrator.
 
-## Roadmap
-
-- [ ] Annotation toolbar
-- [ ] Screen recording (GIF / MP4)
-- [ ] OCR text capture
-- [ ] winget package
-
 ## Contributing
 
 Issues and pull requests are welcome. Please keep changes focused and in line with the project's goals: performance, minimal design, convenience.
