@@ -35,7 +35,7 @@ A kerf is the thin cut a saw leaves. The tool is built around the same idea: one
 
 ## Install
 
-Download the latest `kerf.exe` from [Releases](https://github.com/fypcode/kerf/releases) and run it. Kerf lives in the system tray.
+Download the latest `kerf.exe` from [Releases](https://github.com/nettlebyte/kerf/releases) and run it. Kerf lives in the system tray.
 
 > The build is not code-signed yet, so Windows SmartScreen may warn on first launch. Click **More info → Run anyway**.
 
@@ -70,7 +70,7 @@ Main options:
 Requires Rust (stable) and Windows 10/11.
 
 ```powershell
-git clone https://github.com/<your-username>/kerf.git
+git clone https://github.com/nettlebyte/kerf.git
 cd kerf
 cargo build --release
 ```
@@ -88,4 +88,4 @@ Issues and pull requests are welcome. Please keep changes focused and in line wi
 
 ## License
 
-[MIT](LICENSE) © 2026 fypcode
+[MIT](LICENSE) © 2026 nettlebyte
