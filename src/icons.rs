@@ -182,10 +182,10 @@ pub unsafe fn logo(g: *mut GpGraphics, x: f32, y: f32, size: f32, tile: bool) {
     let (kx, ky) = (x + s * 0.5, y + s * 0.5);
     let px = |v: f32| kx + (v - 10.0) * s / 20.0;
     let py = |v: f32| ky + (v - 10.0) * s / 20.0;
-    let wd = s * 0.11;
-    gp::line(g, px(6.2), py(4.6), px(6.2), py(15.4), 0xFFF3F3F6, wd, true);
-    gp::line(g, px(13.9), py(4.6), px(8.6), py(9.6), ui::argb(255, ui::ACCENT), wd, true);
-    gp::line(g, px(9.9), py(10.8), px(13.9), py(15.4), ui::argb(255, ui::ACCENT), wd, true);
+    let wd = s * 0.115;
+    gp::line(g, px(6.15), py(4.6), px(6.15), py(15.4), 0xFFF3F3F6, wd, true);
+    gp::line(g, px(13.85), py(4.6), px(8.0), py(10.0), ui::argb(255, ui::ACCENT), wd, true);
+    gp::line(g, px(8.0), py(10.0), px(13.85), py(15.4), ui::argb(255, ui::ACCENT), wd, true);
 }
 
 pub unsafe fn app_icon(size: i32) -> HICON {
@@ -198,9 +198,9 @@ pub unsafe fn app_icon(size: i32) -> HICON {
         let px = |v: f32| v * s;
         let py = |v: f32| v * s;
         let wd = s * 0.115;
-        gp::line(g.raw, px(0.31), py(0.23), px(0.31), py(0.77), 0xFFF3F3F6, wd, true);
-        gp::line(g.raw, px(0.70), py(0.23), px(0.43), py(0.48), ui::argb(255, ui::ACCENT), wd, true);
-        gp::line(g.raw, px(0.50), py(0.54), px(0.70), py(0.77), ui::argb(255, ui::ACCENT), wd, true);
+        gp::line(g.raw, px(0.305), py(0.23), px(0.305), py(0.77), 0xFFF3F3F6, wd, true);
+        gp::line(g.raw, px(0.695), py(0.23), px(0.40), py(0.50), ui::argb(255, ui::ACCENT), wd, true);
+        gp::line(g.raw, px(0.40), py(0.50), px(0.695), py(0.77), ui::argb(255, ui::ACCENT), wd, true);
     }
     let mask = windows_sys::Win32::Graphics::Gdi::CreateBitmap(size, size, 1, 1, std::ptr::null());
     let ii = ICONINFO {
