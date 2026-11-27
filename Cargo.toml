@@ -1,6 +1,6 @@
 [package]
 name = "kerf"
-version = "1.1.0"
+version = "1.1.1"
 edition = "2021"
 description = "Kerf - fast and lightweight region screenshot tool for Windows 10/11"
 license = "MIT"
